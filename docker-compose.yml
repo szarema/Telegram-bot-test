@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  service:
+    build: .
+    command: python3 main.py
+    restart: always
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
